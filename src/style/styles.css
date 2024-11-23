@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Noto+Sans:wght@500&family=Raleway:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.categorias-text a {
+    text-decoration: none;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.card {
+    width: 12rem;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.productsContainer {
+    display: flex;
+    flex-flow: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 18rem;
+    text-align: center;
+}
+
+.image {
+    width: 13rem;
+    height: 13rem;
+}
+
+.position {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.category {
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.categorias-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-type: none;
+    gap: 10px;
+}
+
+
+.footer-container {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+.pie {
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.texto-footer {
+    text-decoration: none;
+    color: #d3d3d3;
+
+}
+
+.redes {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.creditos {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #d3d3d3;
+    margin-top: 40px;
+}
+
+
+
+.image-product {
+    width: 20rem;
+    height: 20rem;
+}
+
+.position-product {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card-body {
+    display: inline-block;
+}
+
+.background {
+    background-image: url(../src//img/background.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 4px 5px rgb(184, 184, 184);
+}
+
+.textPrincipal {
+    color: white;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card-body-product {
+
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+}
+
+.card-title-product {
+    margin-top: 20px;
+}
+
+.formValidation {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 10px black;
+
+}
+
+.fieldsetValidation {
+    gap: 30px;
+}
+
+.carritoElement {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.quantityProducts {
+    font-size: 15px;
+    color: white;
+}
+
+.elementoCentrado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

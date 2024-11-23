@@ -1,0 +1,32 @@
+
+    return (
+        <div className='position-product' >
+
+            {product.map(({ images, name, stock, price }) => (
+                <div className='card-body-product' key={name} >
+                    <img alt="imagen" className='image-product' src={images} />
+                    <h5 className='card-title-product'>{name}</h5>
+                    <p className='card-stock'>Stock Disponible: {stock}</p>
+                    <p className='card-text'>${price}</p>
+                    <ItemCount stock={stock} initial={1} onAdd={onAdd} />
+                    <p className='cantidad'>Cantidad Agregada: {contador}</p>
+                </div>
+            ))}
+        </div >
+
+    )
+}
+
+
+export const getProductById = (db, id) => {
+    const documentRef = doc(db, 'Products', id);
+    return getDoc(documentRef)
+        .then((dataFB) => {
+            if (dataFB.exists) {
+                return {
+                    id: dataFB.id,
+                    ...dataFB.data()
+                }
+            }
+        })
+}
